@@ -1,0 +1,1023 @@
+2020-06-16 11:10:42.666 [main] INFO  com.zhaoyujie.ManageSystemApplication -
+				Starting ManageSystemApplication on zhaoyujiedeMacBook-Pro.local with PID 1182 (/Users/zhaoyujie/git/ManageSystemProject/ManageSystem/target/classes started by zhaoyujie in /Users/zhaoyujie/git/ManageSystemProject/ManageSystem)
+2020-06-16 11:10:42.668 [main] INFO  com.zhaoyujie.ManageSystemApplication -
+				No active profile set, falling back to default profiles: default
+2020-06-16 11:10:43.144 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+				Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-06-16 11:10:43.258 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+				Finished Spring Data repository scanning in 107ms. Found 17 JPA repository interfaces.
+2020-06-16 11:10:43.489 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-16 11:10:43.657 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+				Tomcat initialized with port(s): 8096 (http)
+2020-06-16 11:10:43.663 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8096"]
+2020-06-16 11:10:43.664 [main] INFO  org.apache.catalina.core.StandardService -
+				Starting service [Tomcat]
+2020-06-16 11:10:43.664 [main] INFO  org.apache.catalina.core.StandardEngine -
+				Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-06-16 11:10:43.720 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2020-06-16 11:10:43.720 [main] INFO  org.springframework.web.context.ContextLoader -
+				Root WebApplicationContext: initialization completed in 1025 ms
+2020-06-16 11:10:43.843 [main] INFO  org.hibernate.jpa.internal.util.LogHelper -
+				HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-16 11:10:43.888 [main] INFO  org.hibernate.Version -
+				HHH000412: Hibernate Core {5.4.10.Final}
+2020-06-16 11:10:44.012 [main] INFO  org.hibernate.annotations.common.Version -
+				HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-16 11:10:44.078 [main] WARN  com.zaxxer.hikari.HikariConfig -
+				HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2020-06-16 11:10:44.078 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Starting...
+2020-06-16 11:10:44.380 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Start completed.
+2020-06-16 11:10:44.393 [main] INFO  org.hibernate.dialect.Dialect -
+				HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-06-16 11:10:45.129 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator -
+				HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-16 11:10:45.134 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -
+				Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-16 11:10:45.833 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+				Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-16 11:10:46.034 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-8096"]
+2020-06-16 11:10:46.055 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+				Tomcat started on port(s): 8096 (http) with context path ''
+2020-06-16 11:10:46.057 [main] INFO  com.zhaoyujie.ManageSystemApplication -
+				Started ManageSystemApplication in 3.676 seconds (JVM running for 4.079)
+2020-06-16 11:13:21.936 [http-nio-8096-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-16 11:13:21.936 [http-nio-8096-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet -
+				Initializing Servlet 'dispatcherServlet'
+2020-06-16 11:13:22.050 [http-nio-8096-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet -
+				Completed initialization in 114 ms
+2020-06-16 11:13:22.076 [http-nio-8096-exec-2] INFO  com.zhaoyujie.supplier.rest.SupplierRest -
+				Rest 调用增加供应商信息接口!
+2020-06-16 11:13:22.076 [http-nio-8096-exec-2] INFO  com.zhaoyujie.supplier.rest.SupplierRest -
+				前端请求：{
+	"cmd":"addSupplier",
+	"type":"request",
+	"request":{
+		"supplierName":"三星集团",
+		"easyName":"三星",
+		"address":"韩国",
+		"postCode":"562371",
+		"phone":"0531-4564533",
+		"fax":"0431-4564532",
+		"contactName":"高志力",
+		"contactPhone":"15345679875",
+		"email":"sanxing@163.com",
+		"bankName":"中国建设银行"
+	}
+}
+2020-06-16 11:13:22.104 [http-nio-8096-exec-2] INFO  c.z.supplier.service.impl.SupplierServiceImpl -
+				Service 调用增加供应商信息接口
+2020-06-16 11:13:22.238 [http-nio-8096-exec-2] INFO  com.zhaoyujie.supplier.rest.SupplierRest -
+				调用增加供应商信息接口完成！
+2020-06-16 11:29:38.911 [http-nio-8096-exec-5] INFO  com.zhaoyujie.supplier.rest.SupplierRest -
+				Rest 调用查找所有的供应商信息接口!
+2020-06-16 11:29:38.912 [http-nio-8096-exec-5] INFO  com.zhaoyujie.supplier.rest.SupplierRest -
+				前端请求：{
+	"cmd":"findAllSupplier",
+	"type":"request"
+}
+2020-06-16 11:29:38.914 [http-nio-8096-exec-5] INFO  c.z.supplier.service.impl.SupplierServiceImpl -
+				Service 调用查找所有的供应商信息接口
+2020-06-16 11:29:38.922 [http-nio-8096-exec-5] INFO  com.zhaoyujie.supplier.rest.SupplierRest -
+				调用查找所有的供应商信息接口完成！
+2020-06-16 11:56:02.954 [http-nio-8096-exec-8] INFO  com.zhaoyujie.supplier.rest.SupplierRest -
+				Rest 调用获取所有供应商全称接口!
+2020-06-16 11:56:02.954 [http-nio-8096-exec-8] INFO  com.zhaoyujie.supplier.rest.SupplierRest -
+				前端请求：{
+	"cmd":"getAllSupplierName",
+	"type":"request"
+}
+2020-06-16 11:56:02.954 [http-nio-8096-exec-8] INFO  c.z.supplier.service.impl.SupplierServiceImpl -
+				Service 调用获取所有供应商的全称接口
+2020-06-16 11:56:02.957 [http-nio-8096-exec-8] INFO  com.zhaoyujie.supplier.rest.SupplierRest -
+				调用获取所有供应商全称接口完成！
+2020-06-16 12:00:49.777 [http-nio-8096-exec-1] INFO  com.zhaoyujie.customer.rest.CustomerRest -
+				Rest 调用增加客户信息接口!
+2020-06-16 12:00:49.777 [http-nio-8096-exec-1] INFO  com.zhaoyujie.customer.rest.CustomerRest -
+				前端请求：{
+	"cmd":"addCustomer",
+	"type":"request",
+	"request":{
+		"customerName":"明宇经贸公司",
+		"easyName":"MingYu",
+		"address":"长春市吉林大陆23号",
+		"postCode":"156324",
+		"phone":"0531-4521433",
+		"fax":"0431-4521432",
+		"contactName":"吕小阳",
+		"contactPhone":"13426514568",
+		"email":"mingyu@163.com",
+		"bankName":"中国建设银行",
+		"bankNumber":"220123456789"
+	}
+}
+2020-06-16 12:00:49.777 [http-nio-8096-exec-1] INFO  c.z.customer.service.impl.CustomerServiceImpl -
+				Service 调用增加客户信息接口
+2020-06-16 12:00:49.782 [http-nio-8096-exec-1] ERROR c.z.customer.service.impl.CustomerServiceImpl -
+				addCustomer:此客户信息已存在，添加失败
+2020-06-16 12:00:49.782 [http-nio-8096-exec-1] INFO  com.zhaoyujie.customer.rest.CustomerRest -
+				调用增加客户信息接口完成！
+2020-06-16 12:01:05.113 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -
+				Application shutdown requested.
+2020-06-16 12:01:05.115 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+				Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-16 12:01:05.118 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -
+				Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-16 12:01:05.120 [RMI TCP Connection(3)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown initiated...
+2020-06-16 12:01:05.123 [RMI TCP Connection(3)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown completed.
+2020-06-16 12:09:13.256 [main] INFO  com.zhaoyujie.ManageSystemApplication -
+				Starting ManageSystemApplication on zhaoyujiedeMacBook-Pro.local with PID 1471 (/Users/zhaoyujie/git/ManageSystemProject/ManageSystem/target/classes started by zhaoyujie in /Users/zhaoyujie/git/ManageSystemProject/ManageSystem)
+2020-06-16 12:09:13.258 [main] INFO  com.zhaoyujie.ManageSystemApplication -
+				No active profile set, falling back to default profiles: default
+2020-06-16 12:09:13.681 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+				Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-06-16 12:09:13.780 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+				Finished Spring Data repository scanning in 92ms. Found 17 JPA repository interfaces.
+2020-06-16 12:09:13.967 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-16 12:09:14.130 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+				Tomcat initialized with port(s): 8096 (http)
+2020-06-16 12:09:14.138 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8096"]
+2020-06-16 12:09:14.139 [main] INFO  org.apache.catalina.core.StandardService -
+				Starting service [Tomcat]
+2020-06-16 12:09:14.139 [main] INFO  org.apache.catalina.core.StandardEngine -
+				Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-06-16 12:09:14.209 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2020-06-16 12:09:14.209 [main] INFO  org.springframework.web.context.ContextLoader -
+				Root WebApplicationContext: initialization completed in 921 ms
+2020-06-16 12:09:14.334 [main] INFO  org.hibernate.jpa.internal.util.LogHelper -
+				HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-16 12:09:14.375 [main] INFO  org.hibernate.Version -
+				HHH000412: Hibernate Core {5.4.10.Final}
+2020-06-16 12:09:14.483 [main] INFO  org.hibernate.annotations.common.Version -
+				HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-16 12:09:14.536 [main] WARN  com.zaxxer.hikari.HikariConfig -
+				HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2020-06-16 12:09:14.536 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Starting...
+2020-06-16 12:09:14.764 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Start completed.
+2020-06-16 12:09:14.776 [main] INFO  org.hibernate.dialect.Dialect -
+				HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-06-16 12:09:15.459 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator -
+				HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-16 12:09:15.464 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -
+				Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-16 12:09:16.089 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+				Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-16 12:09:16.275 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-8096"]
+2020-06-16 12:09:16.292 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+				Tomcat started on port(s): 8096 (http) with context path ''
+2020-06-16 12:09:16.294 [main] INFO  com.zhaoyujie.ManageSystemApplication -
+				Started ManageSystemApplication in 3.348 seconds (JVM running for 3.923)
+2020-06-16 12:09:20.612 [http-nio-8096-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-16 12:09:20.612 [http-nio-8096-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet -
+				Initializing Servlet 'dispatcherServlet'
+2020-06-16 12:09:20.618 [http-nio-8096-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet -
+				Completed initialization in 5 ms
+2020-06-16 12:09:20.643 [http-nio-8096-exec-2] INFO  com.zhaoyujie.customer.rest.CustomerRest -
+				Rest 调用查找所有的客户信息接口!
+2020-06-16 12:09:20.643 [http-nio-8096-exec-2] INFO  com.zhaoyujie.customer.rest.CustomerRest -
+				前端请求：{
+	"cmd":"findAllCustomer",
+	"type":"request"
+}
+2020-06-16 12:09:20.673 [http-nio-8096-exec-2] INFO  c.z.customer.service.impl.CustomerServiceImpl -
+				Service 调用查找所有的客户信息接口
+2020-06-16 12:09:20.775 [http-nio-8096-exec-2] INFO  com.zhaoyujie.customer.rest.CustomerRest -
+				调用查找所有的客户信息接口完成！
+2020-06-16 12:18:41.498 [http-nio-8096-exec-5] INFO  com.zhaoyujie.customer.rest.CustomerRest -
+				Rest 调用获取所有客户全称接口!
+2020-06-16 12:18:41.498 [http-nio-8096-exec-5] INFO  com.zhaoyujie.customer.rest.CustomerRest -
+				前端请求：{
+	"cmd":"getAllCustomerName",
+	"type":"request"
+}
+2020-06-16 12:18:41.498 [http-nio-8096-exec-5] INFO  c.z.customer.service.impl.CustomerServiceImpl -
+				Service 调用获取所有的客户全称接口
+2020-06-16 12:18:41.500 [http-nio-8096-exec-5] INFO  com.zhaoyujie.customer.rest.CustomerRest -
+				调用获取所有客户全称接口完成！
+2020-06-16 12:27:48.757 [http-nio-8096-exec-8] INFO  com.zhaoyujie.brand.rest.BrandRest -
+				Rest 调用查找所有的商品信息接口!
+2020-06-16 12:27:48.757 [http-nio-8096-exec-8] INFO  com.zhaoyujie.brand.rest.BrandRest -
+				前端请求：{
+	"cmd":"findAllBrand",
+	"type":"request"
+}
+2020-06-16 12:27:48.757 [http-nio-8096-exec-8] INFO  com.zhaoyujie.brand.service.impl.BrandServiceImpl -
+				Service 调用查找所有的商品信息接口
+2020-06-16 12:27:48.762 [http-nio-8096-exec-8] INFO  com.zhaoyujie.brand.rest.BrandRest -
+				调用查找所有的商品信息接口完成！
+2020-06-16 12:36:03.555 [http-nio-8096-exec-1] INFO  com.zhaoyujie.brand.rest.BrandRest -
+				Rest 调用获取所有商品全称接口!
+2020-06-16 12:36:03.555 [http-nio-8096-exec-1] INFO  com.zhaoyujie.brand.rest.BrandRest -
+				前端请求：{
+	"cmd":"getAllCommodityName",
+	"type":"request"
+}
+2020-06-16 12:36:03.555 [http-nio-8096-exec-1] INFO  com.zhaoyujie.brand.service.impl.BrandServiceImpl -
+				Service 调用获取所有的商品全称接口
+2020-06-16 12:36:03.558 [http-nio-8096-exec-1] INFO  com.zhaoyujie.brand.rest.BrandRest -
+				调用获取所有商品全称接口完成！
+2020-06-16 12:45:04.627 [http-nio-8096-exec-4] INFO  com.zhaoyujie.stockup.rest.StockUpRest -
+				Rest 调用查找所有的入库信息接口!
+2020-06-16 12:45:04.628 [http-nio-8096-exec-4] INFO  com.zhaoyujie.stockup.rest.StockUpRest -
+				前端请求：{
+	"cmd":"findAllStockUp",
+	"type":"request"
+}
+2020-06-16 12:45:04.636 [http-nio-8096-exec-4] INFO  c.z.stockup.service.impl.StockUpServiceImpl -
+				Service 调用查找所有商品的入库信息接口
+2020-06-16 12:45:04.664 [http-nio-8096-exec-4] INFO  com.zhaoyujie.stockup.rest.StockUpRest -
+				调用查找所有的入库信息接口完成！
+2020-06-16 13:04:16.949 [http-nio-8096-exec-7] INFO  com.zhaoyujie.stockup.rest.StockUpCloseAccountRest -
+				Rest 调用查找所有的入库结账信息接口!
+2020-06-16 13:04:16.949 [http-nio-8096-exec-7] INFO  com.zhaoyujie.stockup.rest.StockUpCloseAccountRest -
+				前端请求：{
+	"cmd":"findAllStockUpCloseAccount",
+	"type":"request"
+}
+2020-06-16 13:04:16.949 [http-nio-8096-exec-7] INFO  c.z.s.service.impl.StockUpCloseAccountServiceImpl -
+				Service 调用查找所有商品的入库结账信息接口
+2020-06-16 13:04:16.956 [http-nio-8096-exec-7] INFO  com.zhaoyujie.stockup.rest.StockUpCloseAccountRest -
+				调用查找所有的入库结账信息接口完成！
+2020-06-16 13:21:18.829 [http-nio-8096-exec-10] INFO  com.zhaoyujie.stock.rest.StockRest -
+				Rest 调用查找所有的库存信息接口!
+2020-06-16 13:21:18.829 [http-nio-8096-exec-10] INFO  com.zhaoyujie.stock.rest.StockRest -
+				前端请求：{
+	"cmd":"findAllStock",
+	"type":"request"
+}
+2020-06-16 13:21:18.829 [http-nio-8096-exec-10] INFO  com.zhaoyujie.stock.service.impl.StockServiceImpl -
+				Service 调用查找所有库存信息接口
+2020-06-16 13:21:18.835 [http-nio-8096-exec-10] INFO  com.zhaoyujie.stock.rest.StockRest -
+				调用查找所有的库存信息接口完成！
+2020-06-16 13:27:15.707 [http-nio-8096-exec-3] INFO  com.zhaoyujie.stock.rest.StockRest -
+				Rest 调用修改库存信息接口!
+2020-06-16 13:27:15.707 [http-nio-8096-exec-3] INFO  com.zhaoyujie.stock.rest.StockRest -
+				前端请求：{
+	"cmd":"modifyStock",
+	"type":"request",
+	"request":{
+		"commodityName":"统一红烧牛肉面",
+		"price":"1"
+	}
+}
+2020-06-16 13:27:15.707 [http-nio-8096-exec-3] INFO  com.zhaoyujie.stock.service.impl.StockServiceImpl -
+				Service 调用修改商品库存信息接口
+2020-06-16 13:27:15.729 [http-nio-8096-exec-3] INFO  com.zhaoyujie.stock.rest.StockRest -
+				调用修改库存信息接口完成！
+2020-06-16 13:31:14.246 [http-nio-8096-exec-6] INFO  com.zhaoyujie.user.rest.UserRest -
+				Rest 调用管理员登录接口!
+2020-06-16 13:31:14.246 [http-nio-8096-exec-6] INFO  com.zhaoyujie.user.rest.UserRest -
+				前端请求：{
+	"cmd":"login",
+	"type":"request",
+	"request":{
+		"account":"2217145788",
+		"password":"123456"
+	}
+}
+2020-06-16 13:31:14.246 [http-nio-8096-exec-6] INFO  com.zhaoyujie.user.service.impl.UserServiceImpl -
+				Service 调用登录接口
+2020-06-16 13:31:14.250 [http-nio-8096-exec-6] INFO  com.zhaoyujie.user.rest.UserRest -
+				调用管理员登录接口完成！
+2020-06-16 13:34:23.309 [http-nio-8096-exec-9] INFO  com.zhaoyujie.user.rest.UserRest -
+				Rest 调用修改管理员接口!
+2020-06-16 13:34:23.309 [http-nio-8096-exec-9] INFO  com.zhaoyujie.user.rest.UserRest -
+				前端请求：{
+	"cmd":"modifyUser",
+	"type":"request",
+	"request":{
+		"account":"2217145788",
+		"password":"123456"
+	}
+}
+2020-06-16 13:34:23.309 [http-nio-8096-exec-9] INFO  com.zhaoyujie.user.service.impl.UserServiceImpl -
+				Service 调用修改管理员信息接口！
+2020-06-16 13:34:23.315 [http-nio-8096-exec-9] INFO  com.zhaoyujie.user.rest.UserRest -
+				调用修改管理员接口完成！
+2020-06-16 13:45:36.900 [http-nio-8096-exec-2] INFO  com.zhaoyujie.stock.rest.StockRest -
+				Rest 调用查找所有的库存信息接口!
+2020-06-16 13:45:36.900 [http-nio-8096-exec-2] INFO  com.zhaoyujie.stock.rest.StockRest -
+				前端请求：{
+	"cmd":"findAllStock",
+	"type":"request"
+}
+2020-06-16 13:45:36.900 [http-nio-8096-exec-2] INFO  com.zhaoyujie.stock.service.impl.StockServiceImpl -
+				Service 调用查找所有库存信息接口
+2020-06-16 13:45:36.903 [http-nio-8096-exec-2] INFO  com.zhaoyujie.stock.rest.StockRest -
+				调用查找所有的库存信息接口完成！
+2020-06-16 13:54:43.570 [http-nio-8096-exec-5] INFO  com.zhaoyujie.stockupback.rest.StockUpBackRest -
+				Rest 调用查找所有的库存商品退货信息接口!
+2020-06-16 13:54:43.570 [http-nio-8096-exec-5] INFO  com.zhaoyujie.stockupback.rest.StockUpBackRest -
+				前端请求：{
+	"cmd":"findAllStockUpBack",
+	"type":"request"
+}
+2020-06-16 13:54:43.570 [http-nio-8096-exec-5] INFO  c.z.s.service.impl.StockUpBackServiceImpl -
+				Service 调用查找库存中所有商品的退货信息接口
+2020-06-16 13:54:43.581 [http-nio-8096-exec-5] INFO  com.zhaoyujie.stockupback.rest.StockUpBackRest -
+				调用查找所有的库存商品退货信息接口完成！
+2020-06-16 14:04:20.551 [http-nio-8096-exec-8] INFO  c.z.stockupback.rest.StockUpBackCloseAccountRest -
+				Rest 调用增加入库商品退货结账信息接口!
+2020-06-16 14:04:20.552 [http-nio-8096-exec-8] INFO  c.z.stockupback.rest.StockUpBackCloseAccountRest -
+				前端请求：{
+	"cmd":"addStockUpBackCloseAccount",
+	"type":"request",
+	"request":{
+		"stockUpBackId":"15922202176177",
+		"closeAccount":"1",
+		"account":"2217145788",
+		"operator":"张三"
+	}
+}
+2020-06-16 14:04:20.552 [http-nio-8096-exec-8] INFO  c.z.s.s.impl.StockUpBackCloseAccountServiceImpl -
+				Service 调用增加入库商品退货结账信息接口
+2020-06-16 14:04:20.561 [http-nio-8096-exec-8] ERROR c.z.s.s.impl.StockUpBackCloseAccountServiceImpl -
+				addStockUpBackCloseAccount:已结清金额，无需进行结账操作
+2020-06-16 14:04:20.561 [http-nio-8096-exec-8] INFO  c.z.stockupback.rest.StockUpBackCloseAccountRest -
+				调用增加入库商品退货结账信息接口完成！
+2020-06-16 14:06:23.333 [http-nio-8096-exec-1] INFO  c.z.stockupback.rest.StockUpBackCloseAccountRest -
+				Rest 调用查找所有的入库商品退货结账信息接口!
+2020-06-16 14:06:23.333 [http-nio-8096-exec-1] INFO  c.z.stockupback.rest.StockUpBackCloseAccountRest -
+				前端请求：{
+	"cmd":"findAllStockUpBackCloseAccount",
+	"type":"request"
+}
+2020-06-16 14:06:23.333 [http-nio-8096-exec-1] INFO  c.z.s.s.impl.StockUpBackCloseAccountServiceImpl -
+				Service 调用查找所有商品的入库退货结账信息接口
+2020-06-16 14:06:23.340 [http-nio-8096-exec-1] INFO  c.z.stockupback.rest.StockUpBackCloseAccountRest -
+				调用查找所有的入库商品退货结账信息接口完成！
+2020-06-16 14:21:57.871 [http-nio-8096-exec-4] INFO  com.zhaoyujie.sell.rest.SellRest -
+				Rest 调用查找所有的商品销售信息接口!
+2020-06-16 14:21:57.871 [http-nio-8096-exec-4] INFO  com.zhaoyujie.sell.rest.SellRest -
+				前端请求：{
+	"cmd":"findAllSell",
+	"type":"request"
+}
+2020-06-16 14:21:57.871 [http-nio-8096-exec-4] INFO  com.zhaoyujie.sell.service.impl.SellServiceImpl -
+				Service 调用查找所有商品的销售信息接口
+2020-06-16 14:21:57.882 [http-nio-8096-exec-4] INFO  com.zhaoyujie.sell.rest.SellRest -
+				调用查找所有的商品销售信息接口完成！
+2020-06-16 14:22:58.854 [http-nio-8096-exec-7] INFO  c.zhaoyujie.sell.rest.SellCloseAccountServiceRest -
+				Rest 调用查找所有的销售商品结账信息接口!
+2020-06-16 14:22:58.854 [http-nio-8096-exec-7] INFO  c.zhaoyujie.sell.rest.SellCloseAccountServiceRest -
+				前端请求：{
+	"cmd":"findAllSellCloseAccount",
+	"type":"request"
+}
+2020-06-16 14:22:58.854 [http-nio-8096-exec-7] INFO  c.z.sell.service.impl.SellCloseAccountServiceImpl -
+				Service 调用查找所有商品的销售结账信息接口
+2020-06-16 14:22:58.863 [http-nio-8096-exec-7] INFO  c.zhaoyujie.sell.rest.SellCloseAccountServiceRest -
+				调用查找所有的销售商品结账信息接口完成！
+2020-06-16 14:46:29.387 [http-nio-8096-exec-10] INFO  com.zhaoyujie.sellback.rest.SellBackRest -
+				Rest 调用查找所有的销售商品退货信息接口!
+2020-06-16 14:46:29.387 [http-nio-8096-exec-10] INFO  com.zhaoyujie.sellback.rest.SellBackRest -
+				前端请求：{
+	"cmd":"findAllSellBack",
+	"type":"request"
+}
+2020-06-16 14:46:29.387 [http-nio-8096-exec-10] INFO  c.z.sellback.service.impl.SellBackServiceImpl -
+				Service 调用查找所有销售商品的退货信息接口
+2020-06-16 14:46:29.398 [http-nio-8096-exec-10] INFO  com.zhaoyujie.sellback.rest.SellBackRest -
+				调用查找所有的销售商品退货信息接口完成！
+2020-06-16 14:51:11.636 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -
+				Application shutdown requested.
+2020-06-16 14:51:11.637 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+				Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-16 14:51:11.640 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -
+				Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-16 14:51:11.642 [RMI TCP Connection(3)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown initiated...
+2020-06-16 14:51:11.648 [RMI TCP Connection(3)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown completed.
+2020-06-16 14:55:04.372 [main] INFO  com.zhaoyujie.ManageSystemApplication -
+				Starting ManageSystemApplication on zhaoyujiedeMacBook-Pro.local with PID 2347 (/Users/zhaoyujie/git/ManageSystemProject/ManageSystem/target/classes started by zhaoyujie in /Users/zhaoyujie/git/ManageSystemProject/ManageSystem)
+2020-06-16 14:55:04.374 [main] INFO  com.zhaoyujie.ManageSystemApplication -
+				No active profile set, falling back to default profiles: default
+2020-06-16 14:55:04.809 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+				Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-06-16 14:55:04.903 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+				Finished Spring Data repository scanning in 89ms. Found 17 JPA repository interfaces.
+2020-06-16 14:55:05.101 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-16 14:55:05.263 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+				Tomcat initialized with port(s): 8096 (http)
+2020-06-16 14:55:05.269 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8096"]
+2020-06-16 14:55:05.270 [main] INFO  org.apache.catalina.core.StandardService -
+				Starting service [Tomcat]
+2020-06-16 14:55:05.270 [main] INFO  org.apache.catalina.core.StandardEngine -
+				Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-06-16 14:55:05.324 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2020-06-16 14:55:05.324 [main] INFO  org.springframework.web.context.ContextLoader -
+				Root WebApplicationContext: initialization completed in 923 ms
+2020-06-16 14:55:05.449 [main] INFO  org.hibernate.jpa.internal.util.LogHelper -
+				HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-16 14:55:05.501 [main] INFO  org.hibernate.Version -
+				HHH000412: Hibernate Core {5.4.10.Final}
+2020-06-16 14:55:05.616 [main] INFO  org.hibernate.annotations.common.Version -
+				HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-16 14:55:05.677 [main] WARN  com.zaxxer.hikari.HikariConfig -
+				HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2020-06-16 14:55:05.678 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Starting...
+2020-06-16 14:55:05.944 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Start completed.
+2020-06-16 14:55:05.955 [main] INFO  org.hibernate.dialect.Dialect -
+				HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-06-16 14:55:06.780 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator -
+				HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-16 14:55:06.786 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -
+				Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-16 14:55:07.563 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+				Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-16 14:55:07.797 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-8096"]
+2020-06-16 14:55:07.817 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+				Tomcat started on port(s): 8096 (http) with context path ''
+2020-06-16 14:55:07.819 [main] INFO  com.zhaoyujie.ManageSystemApplication -
+				Started ManageSystemApplication in 3.716 seconds (JVM running for 4.322)
+2020-06-16 14:56:43.896 [http-nio-8096-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-16 14:56:43.896 [http-nio-8096-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet -
+				Initializing Servlet 'dispatcherServlet'
+2020-06-16 14:56:44.029 [http-nio-8096-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet -
+				Completed initialization in 133 ms
+2020-06-16 14:56:44.055 [http-nio-8096-exec-2] INFO  c.zhaoyujie.sellback.rest.SellBackCloseAccountRest -
+				Rest 调用查找所有的销售商品退货结账信息接口!
+2020-06-16 14:56:44.056 [http-nio-8096-exec-2] INFO  c.zhaoyujie.sellback.rest.SellBackCloseAccountRest -
+				前端请求：{
+	"cmd":"findAllSellBackCloseAccount",
+	"type":"request"
+}
+2020-06-16 14:56:44.088 [http-nio-8096-exec-2] INFO  c.z.s.service.impl.SellBackCloseAccountServiceImpl -
+				Service 调用查找所有商品的销售退货结账信息接口
+2020-06-16 14:56:44.215 [http-nio-8096-exec-2] INFO  c.zhaoyujie.sellback.rest.SellBackCloseAccountRest -
+				调用查找所有的销售商品退货结账信息接口完成！
+2020-06-16 16:42:48.127 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -
+				Application shutdown requested.
+2020-06-16 16:42:48.136 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+				Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-16 16:42:48.140 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -
+				Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-16 16:42:48.146 [RMI TCP Connection(3)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown initiated...
+2020-06-16 16:42:48.152 [RMI TCP Connection(3)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown completed.
+2020-06-16 23:10:13.057 [main] INFO  com.zhaoyujie.ManageSystemApplication -
+				Starting ManageSystemApplication on zhaoyujiedeMacBook-Pro.local with PID 3874 (/Users/zhaoyujie/git/ManageSystemProject/ManageSystem/target/classes started by zhaoyujie in /Users/zhaoyujie/git/ManageSystemProject/ManageSystem)
+2020-06-16 23:10:13.059 [main] INFO  com.zhaoyujie.ManageSystemApplication -
+				No active profile set, falling back to default profiles: default
+2020-06-16 23:10:13.525 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+				Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-06-16 23:10:13.626 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+				Finished Spring Data repository scanning in 94ms. Found 17 JPA repository interfaces.
+2020-06-16 23:10:13.838 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-16 23:10:14.013 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+				Tomcat initialized with port(s): 8096 (http)
+2020-06-16 23:10:14.020 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8096"]
+2020-06-16 23:10:14.021 [main] INFO  org.apache.catalina.core.StandardService -
+				Starting service [Tomcat]
+2020-06-16 23:10:14.021 [main] INFO  org.apache.catalina.core.StandardEngine -
+				Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-06-16 23:10:14.079 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2020-06-16 23:10:14.079 [main] INFO  org.springframework.web.context.ContextLoader -
+				Root WebApplicationContext: initialization completed in 989 ms
+2020-06-16 23:10:14.209 [main] INFO  org.hibernate.jpa.internal.util.LogHelper -
+				HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-16 23:10:14.268 [main] INFO  org.hibernate.Version -
+				HHH000412: Hibernate Core {5.4.10.Final}
+2020-06-16 23:10:14.395 [main] INFO  org.hibernate.annotations.common.Version -
+				HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-16 23:10:14.463 [main] WARN  com.zaxxer.hikari.HikariConfig -
+				HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2020-06-16 23:10:14.463 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Starting...
+2020-06-16 23:10:14.747 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Start completed.
+2020-06-16 23:10:14.759 [main] INFO  org.hibernate.dialect.Dialect -
+				HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-06-16 23:10:15.566 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator -
+				HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-16 23:10:15.570 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -
+				Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-16 23:10:16.296 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+				Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-16 23:10:16.512 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-8096"]
+2020-06-16 23:10:16.534 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+				Tomcat started on port(s): 8096 (http) with context path ''
+2020-06-16 23:10:16.535 [main] INFO  com.zhaoyujie.ManageSystemApplication -
+				Started ManageSystemApplication in 3.771 seconds (JVM running for 4.366)
+2020-06-16 23:10:45.262 [http-nio-8096-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-16 23:10:45.262 [http-nio-8096-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+				Initializing Servlet 'dispatcherServlet'
+2020-06-16 23:10:45.267 [http-nio-8096-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+				Completed initialization in 5 ms
+2020-06-16 23:10:45.294 [http-nio-8096-exec-1] INFO  com.zhaoyujie.stockup.rest.StockUpRest -
+				Rest 调用增加入库信息接口!
+2020-06-16 23:10:45.294 [http-nio-8096-exec-1] INFO  com.zhaoyujie.stockup.rest.StockUpRest -
+				前端请求：{
+	"cmd":"addStockUp",
+	"type":"request",
+	"request":{
+		"commodityName":"统一红烧牛肉面",
+		"stockUpNumber":"20",
+		"price":"1",
+		"paid":"10",
+		"account":"2217145788",
+		"operator":"张三",
+		"method":"现金"
+	}
+}
+2020-06-16 23:10:45.337 [http-nio-8096-exec-1] INFO  c.z.stockup.service.impl.StockUpServiceImpl -
+				Service 调用增加商品入库信息接口
+2020-06-16 23:10:45.517 [http-nio-8096-exec-1] INFO  com.zhaoyujie.stockup.rest.StockUpRest -
+				调用增加入库信息接口完成！
+2020-06-16 23:10:56.715 [http-nio-8096-exec-3] INFO  com.zhaoyujie.stockup.rest.StockUpRest -
+				Rest 调用增加入库信息接口!
+2020-06-16 23:10:56.715 [http-nio-8096-exec-3] INFO  com.zhaoyujie.stockup.rest.StockUpRest -
+				前端请求：{
+	"cmd":"addStockUp",
+	"type":"request",
+	"request":{
+		"commodityName":"统一红烧牛肉面",
+		"stockUpNumber":"4",
+		"price":"2",
+		"paid":"10",
+		"account":"2217145788",
+		"operator":"张三",
+		"method":"现金"
+	}
+}
+2020-06-16 23:10:56.716 [http-nio-8096-exec-3] INFO  c.z.stockup.service.impl.StockUpServiceImpl -
+				Service 调用增加商品入库信息接口
+2020-06-16 23:10:56.718 [http-nio-8096-exec-3] ERROR c.z.stockup.service.impl.StockUpServiceImpl -
+				addStockUp:商品入库实付金额大于应付金额，商品入库操作失败
+2020-06-16 23:10:56.719 [http-nio-8096-exec-3] INFO  com.zhaoyujie.stockup.rest.StockUpRest -
+				调用增加入库信息接口完成！
+2020-06-16 23:11:01.772 [http-nio-8096-exec-4] INFO  com.zhaoyujie.stockup.rest.StockUpRest -
+				Rest 调用增加入库信息接口!
+2020-06-16 23:11:01.772 [http-nio-8096-exec-4] INFO  com.zhaoyujie.stockup.rest.StockUpRest -
+				前端请求：{
+	"cmd":"addStockUp",
+	"type":"request",
+	"request":{
+		"commodityName":"统一红烧牛肉面",
+		"stockUpNumber":"4",
+		"price":"2",
+		"paid":"8",
+		"account":"2217145788",
+		"operator":"张三",
+		"method":"现金"
+	}
+}
+2020-06-16 23:11:01.773 [http-nio-8096-exec-4] INFO  c.z.stockup.service.impl.StockUpServiceImpl -
+				Service 调用增加商品入库信息接口
+2020-06-16 23:11:01.803 [http-nio-8096-exec-4] INFO  com.zhaoyujie.stockup.rest.StockUpRest -
+				调用增加入库信息接口完成！
+2020-06-16 23:14:13.733 [http-nio-8096-exec-7] INFO  com.zhaoyujie.stockup.rest.StockUpRest -
+				Rest 调用增加入库信息接口!
+2020-06-16 23:14:13.734 [http-nio-8096-exec-7] INFO  com.zhaoyujie.stockup.rest.StockUpRest -
+				前端请求：{
+	"cmd":"addStockUp",
+	"type":"request",
+	"request":{
+		"commodityName":"统一红烧牛肉面",
+		"stockUpNumber":"4",
+		"price":"1",
+		"paid":"8",
+		"account":"2217145788",
+		"operator":"张三",
+		"method":"现金"
+	}
+}
+2020-06-16 23:14:13.735 [http-nio-8096-exec-7] INFO  c.z.stockup.service.impl.StockUpServiceImpl -
+				Service 调用增加商品入库信息接口
+2020-06-16 23:14:13.735 [http-nio-8096-exec-7] ERROR c.z.stockup.service.impl.StockUpServiceImpl -
+				addStockUp:商品入库实付金额大于应付金额，商品入库操作失败
+2020-06-16 23:14:13.736 [http-nio-8096-exec-7] INFO  com.zhaoyujie.stockup.rest.StockUpRest -
+				调用增加入库信息接口完成！
+2020-06-16 23:14:20.557 [http-nio-8096-exec-8] INFO  com.zhaoyujie.stockup.rest.StockUpRest -
+				Rest 调用增加入库信息接口!
+2020-06-16 23:14:20.558 [http-nio-8096-exec-8] INFO  com.zhaoyujie.stockup.rest.StockUpRest -
+				前端请求：{
+	"cmd":"addStockUp",
+	"type":"request",
+	"request":{
+		"commodityName":"统一红烧牛肉面",
+		"stockUpNumber":"4",
+		"price":"1",
+		"paid":"4",
+		"account":"2217145788",
+		"operator":"张三",
+		"method":"现金"
+	}
+}
+2020-06-16 23:14:20.559 [http-nio-8096-exec-8] INFO  c.z.stockup.service.impl.StockUpServiceImpl -
+				Service 调用增加商品入库信息接口
+2020-06-16 23:14:20.577 [http-nio-8096-exec-8] INFO  com.zhaoyujie.stockup.rest.StockUpRest -
+				调用增加入库信息接口完成！
+2020-06-16 23:15:02.593 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -
+				Application shutdown requested.
+2020-06-16 23:15:02.595 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+				Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-16 23:15:02.598 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -
+				Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-16 23:15:02.600 [RMI TCP Connection(3)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown initiated...
+2020-06-16 23:15:02.603 [RMI TCP Connection(3)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown completed.
+2020-06-16 23:15:08.444 [main] INFO  com.zhaoyujie.ManageSystemApplication -
+				Starting ManageSystemApplication on zhaoyujiedeMacBook-Pro.local with PID 3913 (/Users/zhaoyujie/git/ManageSystemProject/ManageSystem/target/classes started by zhaoyujie in /Users/zhaoyujie/git/ManageSystemProject/ManageSystem)
+2020-06-16 23:15:08.448 [main] INFO  com.zhaoyujie.ManageSystemApplication -
+				No active profile set, falling back to default profiles: default
+2020-06-16 23:15:09.002 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+				Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-06-16 23:15:09.121 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+				Finished Spring Data repository scanning in 110ms. Found 17 JPA repository interfaces.
+2020-06-16 23:15:09.366 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-16 23:15:09.570 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+				Tomcat initialized with port(s): 8096 (http)
+2020-06-16 23:15:09.579 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8096"]
+2020-06-16 23:15:09.580 [main] INFO  org.apache.catalina.core.StandardService -
+				Starting service [Tomcat]
+2020-06-16 23:15:09.580 [main] INFO  org.apache.catalina.core.StandardEngine -
+				Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-06-16 23:15:09.651 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2020-06-16 23:15:09.652 [main] INFO  org.springframework.web.context.ContextLoader -
+				Root WebApplicationContext: initialization completed in 1170 ms
+2020-06-16 23:15:31.393 [main] INFO  com.zhaoyujie.ManageSystemApplication -
+				Starting ManageSystemApplication on zhaoyujiedeMacBook-Pro.local with PID 3914 (/Users/zhaoyujie/git/ManageSystemProject/ManageSystem/target/classes started by zhaoyujie in /Users/zhaoyujie/git/ManageSystemProject/ManageSystem)
+2020-06-16 23:15:31.396 [main] INFO  com.zhaoyujie.ManageSystemApplication -
+				No active profile set, falling back to default profiles: default
+2020-06-16 23:15:31.939 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+				Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-06-16 23:15:32.054 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+				Finished Spring Data repository scanning in 107ms. Found 17 JPA repository interfaces.
+2020-06-16 23:15:32.309 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-16 23:15:32.520 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+				Tomcat initialized with port(s): 8096 (http)
+2020-06-16 23:15:32.527 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8096"]
+2020-06-16 23:15:32.528 [main] INFO  org.apache.catalina.core.StandardService -
+				Starting service [Tomcat]
+2020-06-16 23:15:32.528 [main] INFO  org.apache.catalina.core.StandardEngine -
+				Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-06-16 23:15:32.592 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2020-06-16 23:15:32.592 [main] INFO  org.springframework.web.context.ContextLoader -
+				Root WebApplicationContext: initialization completed in 1162 ms
+2020-06-16 23:15:32.771 [main] INFO  org.hibernate.jpa.internal.util.LogHelper -
+				HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-16 23:15:32.837 [main] INFO  org.hibernate.Version -
+				HHH000412: Hibernate Core {5.4.10.Final}
+2020-06-16 23:15:32.986 [main] INFO  org.hibernate.annotations.common.Version -
+				HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-16 23:15:33.067 [main] WARN  com.zaxxer.hikari.HikariConfig -
+				HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2020-06-16 23:15:33.067 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Starting...
+2020-06-16 23:15:33.367 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Start completed.
+2020-06-16 23:15:33.385 [main] INFO  org.hibernate.dialect.Dialect -
+				HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-06-16 23:15:34.215 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator -
+				HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-16 23:15:34.221 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -
+				Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-16 23:15:38.093 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+				Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-16 23:15:38.343 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-8096"]
+2020-06-16 23:15:38.369 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+				Tomcat started on port(s): 8096 (http) with context path ''
+2020-06-16 23:15:38.372 [main] INFO  com.zhaoyujie.ManageSystemApplication -
+				Started ManageSystemApplication in 7.333 seconds (JVM running for 7.818)
+2020-06-16 23:15:44.755 [http-nio-8096-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-16 23:15:44.756 [http-nio-8096-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+				Initializing Servlet 'dispatcherServlet'
+2020-06-16 23:15:44.763 [http-nio-8096-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+				Completed initialization in 7 ms
+2020-06-16 23:15:44.802 [http-nio-8096-exec-1] INFO  com.zhaoyujie.stockup.rest.StockUpRest -
+				Rest 调用增加入库信息接口!
+2020-06-16 23:15:44.803 [http-nio-8096-exec-1] INFO  com.zhaoyujie.stockup.rest.StockUpRest -
+				前端请求：{
+	"cmd":"addStockUp",
+	"type":"request",
+	"request":{
+		"commodityName":"统一红烧牛肉面",
+		"stockUpNumber":"4",
+		"price":"1",
+		"paid":"4",
+		"account":"2217145788",
+		"operator":"张三",
+		"method":"现金"
+	}
+}
+2020-06-16 23:16:00.702 [http-nio-8096-exec-1] INFO  c.z.stockup.service.impl.StockUpServiceImpl -
+				Service 调用增加商品入库信息接口
+2020-06-16 23:18:36.804 [main] INFO  com.zhaoyujie.ManageSystemApplication -
+				Starting ManageSystemApplication on zhaoyujiedeMacBook-Pro.local with PID 3924 (/Users/zhaoyujie/git/ManageSystemProject/ManageSystem/target/classes started by zhaoyujie in /Users/zhaoyujie/git/ManageSystemProject/ManageSystem)
+2020-06-16 23:18:36.807 [main] INFO  com.zhaoyujie.ManageSystemApplication -
+				No active profile set, falling back to default profiles: default
+2020-06-16 23:18:37.338 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+				Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-06-16 23:18:37.448 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+				Finished Spring Data repository scanning in 102ms. Found 17 JPA repository interfaces.
+2020-06-16 23:18:37.683 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-16 23:18:37.886 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+				Tomcat initialized with port(s): 8096 (http)
+2020-06-16 23:18:37.896 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8096"]
+2020-06-16 23:18:37.896 [main] INFO  org.apache.catalina.core.StandardService -
+				Starting service [Tomcat]
+2020-06-16 23:18:37.896 [main] INFO  org.apache.catalina.core.StandardEngine -
+				Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-06-16 23:18:37.980 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2020-06-16 23:18:37.980 [main] INFO  org.springframework.web.context.ContextLoader -
+				Root WebApplicationContext: initialization completed in 1129 ms
+2020-06-16 23:18:38.123 [main] INFO  org.hibernate.jpa.internal.util.LogHelper -
+				HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-16 23:18:38.177 [main] INFO  org.hibernate.Version -
+				HHH000412: Hibernate Core {5.4.10.Final}
+2020-06-16 23:18:38.321 [main] INFO  org.hibernate.annotations.common.Version -
+				HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-16 23:18:38.400 [main] WARN  com.zaxxer.hikari.HikariConfig -
+				HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2020-06-16 23:18:38.400 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Starting...
+2020-06-16 23:18:38.681 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Start completed.
+2020-06-16 23:18:38.697 [main] INFO  org.hibernate.dialect.Dialect -
+				HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-06-16 23:18:39.508 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator -
+				HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-16 23:18:39.514 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -
+				Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-16 23:18:42.002 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+				Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-16 23:18:42.238 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-8096"]
+2020-06-16 23:18:42.265 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+				Tomcat started on port(s): 8096 (http) with context path ''
+2020-06-16 23:18:42.268 [main] INFO  com.zhaoyujie.ManageSystemApplication -
+				Started ManageSystemApplication in 5.804 seconds (JVM running for 6.46)
+2020-06-16 23:18:46.805 [http-nio-8096-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-16 23:18:46.805 [http-nio-8096-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet -
+				Initializing Servlet 'dispatcherServlet'
+2020-06-16 23:18:46.812 [http-nio-8096-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet -
+				Completed initialization in 7 ms
+2020-06-16 23:18:46.990 [http-nio-8096-exec-2] INFO  com.zhaoyujie.stockup.rest.StockUpRest -
+				Rest 调用增加入库信息接口!
+2020-06-16 23:18:46.990 [http-nio-8096-exec-2] INFO  com.zhaoyujie.stockup.rest.StockUpRest -
+				前端请求：{
+	"cmd":"addStockUp",
+	"type":"request",
+	"request":{
+		"commodityName":"统一红烧牛肉面",
+		"stockUpNumber":"4",
+		"price":"1",
+		"paid":"4",
+		"account":"2217145788",
+		"operator":"张三",
+		"method":"现金"
+	}
+}
+2020-06-16 23:18:52.904 [http-nio-8096-exec-2] INFO  c.z.stockup.service.impl.StockUpServiceImpl -
+				Service 调用增加商品入库信息接口
+2020-06-16 23:22:01.899 [main] INFO  com.zhaoyujie.ManageSystemApplication -
+				Starting ManageSystemApplication on zhaoyujiedeMacBook-Pro.local with PID 3945 (/Users/zhaoyujie/git/ManageSystemProject/ManageSystem/target/classes started by zhaoyujie in /Users/zhaoyujie/git/ManageSystemProject/ManageSystem)
+2020-06-16 23:22:01.901 [main] INFO  com.zhaoyujie.ManageSystemApplication -
+				No active profile set, falling back to default profiles: default
+2020-06-16 23:22:02.374 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+				Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-06-16 23:22:02.477 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+				Finished Spring Data repository scanning in 96ms. Found 17 JPA repository interfaces.
+2020-06-16 23:22:02.680 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-16 23:22:02.851 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+				Tomcat initialized with port(s): 8096 (http)
+2020-06-16 23:22:02.857 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8096"]
+2020-06-16 23:22:02.858 [main] INFO  org.apache.catalina.core.StandardService -
+				Starting service [Tomcat]
+2020-06-16 23:22:02.858 [main] INFO  org.apache.catalina.core.StandardEngine -
+				Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-06-16 23:22:02.916 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2020-06-16 23:22:02.916 [main] INFO  org.springframework.web.context.ContextLoader -
+				Root WebApplicationContext: initialization completed in 987 ms
+2020-06-16 23:22:03.048 [main] INFO  org.hibernate.jpa.internal.util.LogHelper -
+				HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-16 23:22:03.092 [main] INFO  org.hibernate.Version -
+				HHH000412: Hibernate Core {5.4.10.Final}
+2020-06-16 23:22:03.205 [main] INFO  org.hibernate.annotations.common.Version -
+				HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-16 23:22:03.264 [main] WARN  com.zaxxer.hikari.HikariConfig -
+				HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2020-06-16 23:22:03.264 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Starting...
+2020-06-16 23:22:03.527 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Start completed.
+2020-06-16 23:22:03.538 [main] INFO  org.hibernate.dialect.Dialect -
+				HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-06-16 23:22:04.229 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator -
+				HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-16 23:22:04.234 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -
+				Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-16 23:22:04.874 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+				Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-16 23:22:05.082 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-8096"]
+2020-06-16 23:22:05.103 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+				Tomcat started on port(s): 8096 (http) with context path ''
+2020-06-16 23:22:05.105 [main] INFO  com.zhaoyujie.ManageSystemApplication -
+				Started ManageSystemApplication in 3.485 seconds (JVM running for 4.069)
+2020-06-16 23:22:29.852 [http-nio-8096-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-16 23:22:29.853 [http-nio-8096-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet -
+				Initializing Servlet 'dispatcherServlet'
+2020-06-16 23:22:29.857 [http-nio-8096-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet -
+				Completed initialization in 4 ms
+2020-06-16 23:22:29.883 [http-nio-8096-exec-2] INFO  com.zhaoyujie.stockup.rest.StockUpRest -
+				Rest 调用增加入库信息接口!
+2020-06-16 23:22:29.884 [http-nio-8096-exec-2] INFO  com.zhaoyujie.stockup.rest.StockUpRest -
+				前端请求：{
+	"cmd":"addStockUp",
+	"type":"request",
+	"request":{
+		"commodityName":"统一红烧牛肉面",
+		"stockUpNumber":"4",
+		"price":"1",
+		"paid":"4",
+		"account":"2217145788",
+		"operator":"张三",
+		"method":"现金"
+	}
+}
+2020-06-16 23:22:29.923 [http-nio-8096-exec-2] INFO  c.z.stockup.service.impl.StockUpServiceImpl -
+				Service 调用增加商品入库信息接口
+2020-06-16 23:22:30.095 [http-nio-8096-exec-2] INFO  com.zhaoyujie.stockup.rest.StockUpRest -
+				调用增加入库信息接口完成！
+2020-06-16 23:22:58.579 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -
+				Application shutdown requested.
+2020-06-16 23:22:58.581 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+				Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-16 23:22:58.584 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -
+				Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-16 23:22:58.586 [RMI TCP Connection(3)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown initiated...
+2020-06-16 23:22:58.589 [RMI TCP Connection(3)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown completed.
+2020-06-16 23:23:21.329 [main] INFO  com.zhaoyujie.ManageSystemApplication -
+				Starting ManageSystemApplication on zhaoyujiedeMacBook-Pro.local with PID 3952 (/Users/zhaoyujie/git/ManageSystemProject/ManageSystem/target/classes started by zhaoyujie in /Users/zhaoyujie/git/ManageSystemProject/ManageSystem)
+2020-06-16 23:23:21.331 [main] INFO  com.zhaoyujie.ManageSystemApplication -
+				No active profile set, falling back to default profiles: default
+2020-06-16 23:23:21.789 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+				Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-06-16 23:23:21.897 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+				Finished Spring Data repository scanning in 101ms. Found 17 JPA repository interfaces.
+2020-06-16 23:23:22.111 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-16 23:23:22.289 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+				Tomcat initialized with port(s): 8096 (http)
+2020-06-16 23:23:22.295 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8096"]
+2020-06-16 23:23:22.295 [main] INFO  org.apache.catalina.core.StandardService -
+				Starting service [Tomcat]
+2020-06-16 23:23:22.296 [main] INFO  org.apache.catalina.core.StandardEngine -
+				Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-06-16 23:23:22.350 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2020-06-16 23:23:22.350 [main] INFO  org.springframework.web.context.ContextLoader -
+				Root WebApplicationContext: initialization completed in 993 ms
+2020-06-16 23:23:22.466 [main] INFO  org.hibernate.jpa.internal.util.LogHelper -
+				HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-16 23:23:22.511 [main] INFO  org.hibernate.Version -
+				HHH000412: Hibernate Core {5.4.10.Final}
+2020-06-16 23:23:22.640 [main] INFO  org.hibernate.annotations.common.Version -
+				HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-16 23:23:22.703 [main] WARN  com.zaxxer.hikari.HikariConfig -
+				HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2020-06-16 23:23:22.703 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Starting...
+2020-06-16 23:23:22.965 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Start completed.
+2020-06-16 23:23:22.977 [main] INFO  org.hibernate.dialect.Dialect -
+				HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-06-16 23:23:23.687 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator -
+				HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-16 23:23:23.692 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -
+				Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-16 23:23:24.361 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+				Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-16 23:23:24.564 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-8096"]
+2020-06-16 23:23:24.585 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+				Tomcat started on port(s): 8096 (http) with context path ''
+2020-06-16 23:23:24.587 [main] INFO  com.zhaoyujie.ManageSystemApplication -
+				Started ManageSystemApplication in 3.531 seconds (JVM running for 3.925)
+2020-06-16 23:23:28.267 [http-nio-8096-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+				Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-16 23:23:28.267 [http-nio-8096-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+				Initializing Servlet 'dispatcherServlet'
+2020-06-16 23:23:28.272 [http-nio-8096-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+				Completed initialization in 5 ms
+2020-06-16 23:23:28.415 [http-nio-8096-exec-1] INFO  com.zhaoyujie.stockup.rest.StockUpRest -
+				Rest 调用增加入库信息接口!
+2020-06-16 23:23:28.415 [http-nio-8096-exec-1] INFO  com.zhaoyujie.stockup.rest.StockUpRest -
+				前端请求：{
+	"cmd":"addStockUp",
+	"type":"request",
+	"request":{
+		"commodityName":"统一红烧牛肉面",
+		"stockUpNumber":"4",
+		"price":"1",
+		"paid":"4",
+		"account":"2217145788",
+		"operator":"张三",
+		"method":"现金"
+	}
+}
+2020-06-16 23:23:28.457 [http-nio-8096-exec-1] INFO  c.z.stockup.service.impl.StockUpServiceImpl -
+				Service 调用增加商品入库信息接口
+2020-06-16 23:23:28.627 [http-nio-8096-exec-1] INFO  com.zhaoyujie.stockup.rest.StockUpRest -
+				调用增加入库信息接口完成！
+2020-06-16 23:23:39.148 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -
+				Application shutdown requested.
+2020-06-16 23:23:39.150 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+				Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-16 23:23:39.154 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -
+				Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-16 23:23:39.156 [RMI TCP Connection(3)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown initiated...
+2020-06-16 23:23:39.159 [RMI TCP Connection(3)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown completed.
+2020-06-16 23:25:48.065 [main] INFO  com.zhaoyujie.SpringBootFileUploadApplicationTests -
+				Starting SpringBootFileUploadApplicationTests on zhaoyujiedeMacBook-Pro.local with PID 4018 (started by zhaoyujie in /Users/zhaoyujie/git/ManageSystemProject/ManageSystem)
+2020-06-16 23:25:48.067 [main] INFO  com.zhaoyujie.SpringBootFileUploadApplicationTests -
+				No active profile set, falling back to default profiles: default
+2020-06-16 23:25:48.632 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+				Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-06-16 23:25:48.784 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+				Finished Spring Data repository scanning in 141ms. Found 17 JPA repository interfaces.
+2020-06-16 23:25:49.241 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-16 23:25:49.522 [main] INFO  org.hibernate.jpa.internal.util.LogHelper -
+				HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-16 23:25:49.598 [main] INFO  org.hibernate.Version -
+				HHH000412: Hibernate Core {5.4.10.Final}
+2020-06-16 23:25:49.731 [main] INFO  org.hibernate.annotations.common.Version -
+				HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-16 23:25:49.839 [main] WARN  com.zaxxer.hikari.HikariConfig -
+				HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2020-06-16 23:25:49.840 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Starting...
+2020-06-16 23:25:50.209 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Start completed.
+2020-06-16 23:25:50.232 [main] INFO  org.hibernate.dialect.Dialect -
+				HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-06-16 23:25:51.470 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator -
+				HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-16 23:25:51.478 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -
+				Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-16 23:25:52.910 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+				Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-16 23:25:53.405 [main] INFO  com.zhaoyujie.SpringBootFileUploadApplicationTests -
+				Started SpringBootFileUploadApplicationTests in 5.655 seconds (JVM running for 6.437)
+2020-06-16 23:25:53.518 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+				Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-16 23:25:53.522 [SpringContextShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -
+				Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-16 23:25:53.524 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown initiated...
+2020-06-16 23:25:53.528 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown completed.

@@ -1,0 +1,80 @@
+2020-06-18 14:12:30.555 [main] INFO  com.zhaoyujie.SpringBootFileUploadApplicationTests -
+				Starting SpringBootFileUploadApplicationTests on zhaoyujiedeMacBook-Pro.local with PID 3183 (started by zhaoyujie in /Users/zhaoyujie/git/ManageSystemProject/ManageSystem)
+2020-06-18 14:12:30.557 [main] INFO  com.zhaoyujie.SpringBootFileUploadApplicationTests -
+				No active profile set, falling back to default profiles: default
+2020-06-18 14:12:31.253 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+				Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-06-18 14:12:31.418 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+				Finished Spring Data repository scanning in 151ms. Found 17 JPA repository interfaces.
+2020-06-18 14:12:31.865 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-18 14:12:32.175 [main] INFO  org.hibernate.jpa.internal.util.LogHelper -
+				HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-18 14:12:32.276 [main] INFO  org.hibernate.Version -
+				HHH000412: Hibernate Core {5.4.10.Final}
+2020-06-18 14:12:32.441 [main] INFO  org.hibernate.annotations.common.Version -
+				HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-18 14:12:32.576 [main] WARN  com.zaxxer.hikari.HikariConfig -
+				HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2020-06-18 14:12:32.576 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Starting...
+2020-06-18 14:12:33.001 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Start completed.
+2020-06-18 14:12:33.031 [main] INFO  org.hibernate.dialect.Dialect -
+				HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-06-18 14:12:34.257 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator -
+				HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-18 14:12:34.264 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -
+				Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-18 14:12:35.670 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+				Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-18 14:12:36.220 [main] INFO  com.zhaoyujie.SpringBootFileUploadApplicationTests -
+				Started SpringBootFileUploadApplicationTests in 5.985 seconds (JVM running for 6.812)
+2020-06-18 14:12:36.353 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+				Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-18 14:12:36.357 [SpringContextShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -
+				Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-18 14:12:36.359 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown initiated...
+2020-06-18 14:12:36.363 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown completed.
+2020-06-18 17:55:25.308 [main] INFO  com.zhaoyujie.SpringBootFileUploadApplicationTests -
+				Starting SpringBootFileUploadApplicationTests on zhaoyujiedeMacBook-Pro.local with PID 3987 (started by zhaoyujie in /Users/zhaoyujie/git/ManageSystemProject/ManageSystem)
+2020-06-18 17:55:25.309 [main] INFO  com.zhaoyujie.SpringBootFileUploadApplicationTests -
+				No active profile set, falling back to default profiles: default
+2020-06-18 17:55:25.870 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+				Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-06-18 17:55:26.018 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+				Finished Spring Data repository scanning in 138ms. Found 17 JPA repository interfaces.
+2020-06-18 17:55:26.424 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+				Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-18 17:55:26.709 [main] INFO  org.hibernate.jpa.internal.util.LogHelper -
+				HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-18 17:55:26.783 [main] INFO  org.hibernate.Version -
+				HHH000412: Hibernate Core {5.4.10.Final}
+2020-06-18 17:55:26.906 [main] INFO  org.hibernate.annotations.common.Version -
+				HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-18 17:55:27.009 [main] WARN  com.zaxxer.hikari.HikariConfig -
+				HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2020-06-18 17:55:27.009 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Starting...
+2020-06-18 17:55:27.366 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Start completed.
+2020-06-18 17:55:27.388 [main] INFO  org.hibernate.dialect.Dialect -
+				HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-06-18 17:55:28.446 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator -
+				HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-18 17:55:28.452 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -
+				Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-18 17:55:29.863 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+				Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-18 17:55:30.365 [main] INFO  com.zhaoyujie.SpringBootFileUploadApplicationTests -
+				Started SpringBootFileUploadApplicationTests in 5.328 seconds (JVM running for 6.064)
+2020-06-18 17:55:30.487 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+				Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-18 17:55:30.491 [SpringContextShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -
+				Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-18 17:55:30.493 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown initiated...
+2020-06-18 17:55:30.497 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown completed.
